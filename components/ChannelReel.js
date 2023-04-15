@@ -34,8 +34,8 @@ const ChannelReel = ({ items }) => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToShow: 2,
+          slidesToScroll: 2,
         },
       },
     ],
@@ -44,7 +44,7 @@ const ChannelReel = ({ items }) => {
   return (
     <Slider {...settings} style={{width:"95vw",marginLeft:"2vw"}}>
       {items.map((item) => (
-        <Link key={item.id} className='p-2'  href="[src]" as={`${item.link}`}>
+        <Link key={item.id} className='p-2 items-center'  href="[src]" as={`${item.link}`}>
           <img className='rounded-full' src={item.image} alt={item.title} style={{ width: '155px', height: '150px' }}/>
           <h1 className='text-white'>{item.name}</h1>
         </Link>
