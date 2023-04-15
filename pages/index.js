@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className='bg-black min-h-screen'>
       <Head>
-        <title>Netflix Clone</title>
+        <title>News Buddy</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header className="bg-black">
